@@ -1,0 +1,51 @@
+---
+title: "Labbook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+6/02/2017
+Today Jimmy sent refined cheryl's questions massively as copied and pasted below.
+````r
+"
+Research Questions + possible tasks: TFBS searching
+Where are these specific 4 mer and 6 mer transcription factor binding sites in relation to other genomic features i.e. do they cluster in one location or another/or are they spread across the genome?
+Using ARX models from the Jolma paper, search for any posible TFBS in the ARX gene.
+With the same code, re-search for the ARX motif in the area around the promoter and identify those clusters at 80%. Where are they in the gene? When you extend out your search, can you find any more?
+Do these co-incide with DNAse1 marks of open chromatin? do they co-include wiht known regions of enhancer elements (ENCODE/ others?)
+This is where the UCSC genome browser looking comes in…
+Is it possible to take the 5bp motif (i.e. TAATT or AATTA) from the 13 bp matrix and search for those?
+Do they cluster?
+Thats a pretty AT-rich sequence, so would it be possible for us to plot the %GC of 5bp windows over the ARX loci? This would allow us to identify areas which have a significant AT bias, and hence, potential TFBS for ARX (check out this example)
+Additional Questions (expert level)
+Get the list of differentially expressed genes from Tessa’s paper and do the same searches. Do these genes show similar patterns (of AT-richness, or TFBS clustering etc)
+
+ARX TFBS is a TAATT-AATTA palindrome, is there anything special about palidromes? can we specifically look for palidromes as TFBS?
+We could overlap our identified palidromes with ChIPseq data!
+Are there differences in location or clustering if you have multiple TFBS in same orientation (within a defined length) vs in opposite orientation (i.e. palindromic) within a defined distance. What that defined distance is we may have to have the first part above done to see what the patterns are……..
+
+Are there differences in the location of the TFBS location or clustering if you look for multiple TFBS within a defined length
+remember we think protein dosage may drive some differences in gene de-regulation, so multiple TFBS in a cluster may indicate genes more important to be regulated
+Additional Questions (expert-expert level)
+Are there differences in the location of the TFBS location or clustering if you look for multiple TFBS within a defined length
+remember we think protein dosage may drive some differences in gene de-regulation
+so multiple TFBS in a cluster may indicate genes more important to be regulated???
+Apply some ARX-specific context in terms of genes known to be direct targets vs those ChIP confirmed targets (a lot of these will not be direct as antibody is poor???), genes that are de-regulated with ARX mutations, and those that are not
+how do these regions / clusters etc relate to regulation of specific genes?
+We could apply some chromosome looping analyses using HiC. i.e. If theres an ARX TFBS that is located in the gene desert region, perhaps it loops back and acts as an enhancer for ARX?"
+
+```
+
+In addition, he has also given me the task of selecting 200kb down stream of the arx gene, and 1kb upstream of the arx gene scanning for the ARX transcription factor. domain. 
+
